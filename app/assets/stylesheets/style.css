@@ -1712,11 +1712,11 @@ display: none;
 }
 
 .tparrows.preview3 {
-opacity: 0.2 !Important;
+opacity: 0.2 !important;
 }
 
 .tparrows.preview3:hover {
-opacity: 1 !Important;
+opacity: 1 !important;
 }
 
 .tp-bgimg.defaultimg {
@@ -2121,7 +2121,7 @@ background: #00843d;
   line-height: 28px;
   font-family: "Open Sans",-serif;
   font-size: 13px;
-  font-weight: 400 !Important;
+  font-weight: 400 !important;
   color: #333;
   display: inline-flex;
 }
@@ -10678,7 +10678,7 @@ margin: 0px;
 .order-textarea .textArea {
   border: none;
   font-size: 12px;
-  min-height: 50px !Important;
+  min-height: 50px !important;
   height: 75px;
   width: 100% !important;
 }
