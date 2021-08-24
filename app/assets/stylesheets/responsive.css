@@ -179,12 +179,12 @@ display: none;
 
 
 .About-over p {
-    font-size: 12px !Important;
-    line-height: 18px !Important;
+    font-size: 12px !important;
+    line-height: 18px !important;
 }
 
 .Block-Search input {
-  width: 80% !Important;
+  width: 80% !important;
   font-size: 12px;
 }
 
@@ -711,7 +711,7 @@ display: none;
 
 
 .Block-Search input {
-  width: 80% !Important;
+  width: 80% !important;
   font-size: 9px;
 }
 
@@ -790,7 +790,7 @@ display: none;
 
 .navbar .dropdown-menu:not(.yamm-dropdown-menu) li {
     line-height: 1 !important;
-	padding: 0 !Important;
+	padding: 0 !important;
 }
 
 
@@ -1351,7 +1351,7 @@ display: none;
 }
 
 .Block-Search input {
-  width: 80% !Important;
+  width: 80% !important;
   font-size: 9px;
 }
 
@@ -1998,7 +1998,7 @@ display: none;
 }
 
 .Block-Search input {
-  width: 80% !Important;
+  width: 80% !important;
   font-size: 9px;
 }
 
