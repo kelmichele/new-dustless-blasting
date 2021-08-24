@@ -6,11 +6,20 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <!--  -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <%= favicon_link_tag 'dusticon.png' %>
+    <!-- <= metamagic %> -->
+
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= render 'layouts/analytics' %>
   </head>
 
-  <body>
+  <body class="">
+   <%= render 'layouts/header' %>
     <%= yield %>
+    <%= render 'layouts/footer' %>
+    <!-- <= javascript_include_tag 'application', async: true, 'data-turbolinks-track': 'reload' %> -->
   </body>
 </html>
