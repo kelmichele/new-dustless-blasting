@@ -1,58 +1,48 @@
 .profiler-results.profiler-left.profiler-top.profiler-no-controls{display: none !important;}
-
 $black: #000;
 $white: #fff;
 $green: #00843d;
 @mixin center-block(){
   float:none;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 @mixin sec-default(){
-  width: 100%;
-  float: left;
+  width:100%;
+  float:left;
 }
-
-
-
 
 
 /* ========================================================================
    Component: Off-canvas
  ========================================================================== */
-.uk-offcanvas {display: none;position: fixed;top: 0;bottom: 0;left: 0;z-index: 1000;}
-
-.uk-offcanvas-bar {position: absolute;top: 0;bottom: 0;left: -270px;
-  box-sizing: border-box;width: 270px;padding: 20px 20px;background: #222;
+.uk-offcanvas{display:none;position:fixed;top:0;bottom:0;left:0;z-index:1000;}
+.uk-offcanvas-bar{position:absolute;top:0;bottom:0;left:-270px;
+  box-sizing:border-box;width:270px;padding:20px;background-color:darken($green,12%);//background:#222;
   overflow-y: auto;-webkit-overflow-scrolling: touch;
 }
-@media (min-width: 960px) {
-  .uk-offcanvas-bar {left: -350px;width: 350px;
-    // padding: 40px 40px;
-  }
+@media (min-width: 960px){
+  .uk-offcanvas-bar{left: -350px;width: 350px;}
 }
 
-.uk-open > .uk-offcanvas-bar {left: 0;}
-.uk-offcanvas-bar-animation {transition: left 0.3s ease-out;}
+.uk-open > .uk-offcanvas-bar{left: 0;}
+.uk-offcanvas-bar-animation{transition: left 0.3s ease-out;}
 
-.uk-offcanvas-reveal {position: absolute;top: 0;bottom: 0;left: 0;width: 0;overflow: hidden;transition: width 0.3s ease-out;}
-.uk-offcanvas-reveal .uk-offcanvas-bar {left: 0;}
-.uk-open > .uk-offcanvas-reveal {width: 270px;}
-@media (min-width: 960px) {.uk-open > .uk-offcanvas-reveal {width: 350px;}}
+.uk-offcanvas-reveal{position: absolute;top: 0;bottom: 0;left: 0;width: 0;overflow: hidden;transition: width 0.3s ease-out;}
+.uk-offcanvas-reveal .uk-offcanvas-bar{left: 0;}
+.uk-open > .uk-offcanvas-reveal{width: 270px;}
+@media (min-width: 960px){.uk-open > .uk-offcanvas-reveal{width: 350px;}}
 
-.uk-offcanvas-close {position: absolute;z-index: 1000;top: 20px;right: 20px;padding: 5px;}
-.uk-offcanvas-overlay {width: 100vw; touch-action: none;}
-/*
- * 1. Mask the whole page
- * 2. Fade-in transition
- */
-.uk-offcanvas-overlay::before {content: "";position: absolute;top: 0;bottom: 0;left: 0;right: 0;background: rgba(0, 0, 0, 0.3);opacity: 0;transition: opacity 0.15s linear;}
-.uk-offcanvas-overlay.uk-open::before {opacity: 1;}
+.uk-offcanvas-close{position: absolute;z-index: 1000;top: 20px;right: 20px;padding: 5px;}
+.uk-offcanvas-overlay{width: 100vw; touch-action: none;}
 
-.uk-offcanvas-page,.uk-offcanvas-container {overflow-x: hidden;}
-.uk-offcanvas-container {position: relative;left: 0;transition: left 0.3s ease-out;box-sizing: border-box;width: 100%;}
+.uk-offcanvas-overlay::before{content: "";position: absolute;top: 0;bottom: 0;left: 0;right: 0;background: rgba(0, 0, 0, 0.3);opacity: 0;transition: opacity 0.15s linear;}
+.uk-offcanvas-overlay.uk-open::before{opacity: 1;}
+
+.uk-offcanvas-page,.uk-offcanvas-container{overflow-x: hidden;}
+.uk-offcanvas-container{position: relative;left: 0;transition: left 0.3s ease-out;box-sizing: border-box;width: 100%;}
 
 :not(.uk-offcanvas-flip).uk-offcanvas-container-animation {
   left: 270px;
@@ -61,17 +51,19 @@ $green: #00843d;
   :not(.uk-offcanvas-flip).uk-offcanvas-container-animation {left: 350px;}
 }
 
+#mobile-navDrawer{z-index:99999;
+  button{color:$white;background:transparent;border:none;}
+  svg{width:17px;height:17px;}
+  line{stroke:$white !important;}
 
-
-
-
-
-
-
-
-
-
-
+  ul{margin-top:40px;}
+  li{@include sec-default();margin-bottom:10px;
+    &:hover a{background-color:transparent;opacity:.8;}
+  }
+  a,p{color:$white;}
+  a{font-size:17px;font-family:'Lato', sans-serif;}
+  p{font-weight:bold;margin-top:15px;}
+}
 
 
 .hs3-custom{
@@ -112,20 +104,3 @@ $green: #00843d;
     .hlogo{margin:0 auto;}
   }
 }
-
-
-#mobile-navDrawer{z-index:99999;
-  &::before{background-color:rgba($black,.3);}
-  .uk-offcanvas-bar{background-color:darken($green,12%);padding:20px;}
-  .uk-offcanvas-close{color:$white;}
-  svg{width:17px;height:17px;}
-
-  ul{margin-top:40px;}
-  li{@include sec-default();margin-bottom:10px;
-    &:hover a{background-color:transparent;opacity:.8;}
-  }
-  a{font-size:17px;font-family:'Lato', sans-serif;}
-  p{color:$white;font-weight:bold;}
-}
-
-
