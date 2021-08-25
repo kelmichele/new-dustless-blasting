@@ -12,6 +12,12 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 
+    <!-- UIkit -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/css/uikit.min.css" /> -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit-icons.min.js"></script>
+    <!-- UIkit -->
+
     <%= render 'layouts/analytics' %>
   </head>
 
@@ -20,12 +26,9 @@
       <div id="home" class="body-wrapper">
         <div class="content-wrap">
           <div id="home" class="body-wrapper">
-
            <%= render 'layouts/header' %>
             <%= yield %>
             <%= render 'layouts/footer' %>
-            <!-- <= javascript_include_tag 'application', async: true, 'data-turbolinks-track': 'reload' %> -->
-
           </div>
         </div>
       </div>

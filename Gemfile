@@ -13,6 +13,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 
 gem 'bootstrap', '~> 4.0.0.alpha3.1'
+gem 'jquery-rails'
 gem 'font-awesome-sass'
 gem 'rack-rewrite'
 gem 'owlcarousel-rails'
